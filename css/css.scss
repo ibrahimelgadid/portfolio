@@ -1,0 +1,1008 @@
+$mc:  #11abb0;
+
+
+%cover{
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+%transition
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start framework*/
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    
+    }
+
+
+
+.up{
+    text-transform: uppercase;
+}
+
+
+    
+.cap{
+    text-transform: capitalize;
+}
+
+
+
+
+.over{
+    background: rgba(0, 0, 0, .75);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.pa{
+    color: #8c8c8c;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+button, a, i{
+    cursor: pointer;
+}
+
+.after:after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 5px;
+    background: $mc;
+    margin-top: 20px;
+
+}
+
+hr{
+   border-top: 2px solid #949393;
+}
+
+
+
+
+                             /* end frame work*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start header*/
+
+
+.header{
+    background: url(../images/sliders/landscape1.jpg) no-repeat top center ;
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.header .over{
+     background: rgba(0, 0, 0, .4);
+}
+
+.header .main .head-text{
+    color: #fff;
+    margin: 0 auto;
+    
+}
+
+.header .main .head-text{
+    margin-top: 0;
+    padding-top: 30vh;
+    position: relative;
+}
+
+.header .main .head-text h1{
+    font-size: 50px;
+}
+
+.header .main .head-text h1 span{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.header .main .head-text p{
+    font-size: 22px;
+}
+
+
+
+
+.header .main .arrow {
+    animation: updown .5s linear infinite alternate;
+    transition: all .5s ease-in-out;
+}
+
+
+    
+    @keyframes updown {
+    from {transform: scale(1); bottom: 130px;}
+    to {transform: scale(1.2); bottom: 125px;}
+}
+
+
+
+.header .main .arrow i{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    bottom: -100px;
+    font-size: 50px;
+    transition: all .5s ease-in-out;
+}
+
+.header .main .arrow i:hover{
+    color: $mc;
+}
+
+.header .main .social{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+    background: rgba(0,0,0, .5);
+    width: 100%;
+}
+
+.header .icons a{
+    color: #fff;
+    font-size: 35px;
+    margin-left: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.header .icons a:hover{
+        color:  $mc;
+}
+
+.side{
+    width: 200px;
+    height: 100%;
+    background: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.side .image{
+    padding: 7px;
+    margin: 29px;
+    border-radius: 50%;
+    background: #232323;
+}
+
+.side .image img{
+    padding: 7px;
+    background: #929292;
+    cursor: pointer;
+}
+
+.side .nav1{
+    
+    font-size: 20px;
+}
+
+.side .nav1 li{
+    color: #fff;
+    margin-bottom: 30px;
+    border-left: 5px solid transparent;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.side .nav1 li:hover{
+    border-left: 5px solid  $mc;
+    color:  $mc;
+}
+
+.side .nav1 i{
+    margin-left: 30px;
+}
+
+.menu{
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.menu .icon-bar{
+    display: block;
+    width: 50px;
+    height: 8px;
+    border-radius: 1px;
+    background: #fff;
+    margin-bottom: 8px;
+    transition: all 1s ease-in-out;
+}
+
+
+.menu-close{
+    position: fixed;
+    left: 215px;
+    top: 30px;
+}
+
+.icon1{
+        transform: rotate(50deg);
+}
+
+.icon2{
+    transform: rotate(136deg);
+    margin-top: -16px;
+}
+
+.selected{
+    border-left: 5px solid  $mc !important;
+    color:  $mc !important;
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .header .main .head-text h1 {
+    font-size: 40px;
+    }
+    
+    .header .main .head-text h1 span {
+    font-weight: 900;
+    font-size: 40px;
+    }
+    
+    .header .main .social {
+    padding: 15px 0;
+    }
+}
+
+
+@media(max-width:767px){
+    .header .main .head-text h1 {
+    font-size: 25px;
+    }
+    
+    .header .main .head-text h1 span {
+        font-weight:900;
+        font-size: 24px;
+    }
+    
+    .header .main .head-text p {
+        font-size: 18px;
+        padding: 5px 20px 0;
+    }
+    
+    .header .icons a {
+        font-size: 35px ;
+        margin-left: 20px;
+    }
+    
+    
+    .header .main .social {
+        padding: 25px 0;
+    }
+}
+
+
+@media(max-width:479px){
+    .header .icons a {
+        margin-left: 15px;
+        font-size: 30px;
+    }
+    
+    .header .main .social {
+        padding: 15px 0;
+    }
+}
+
+
+                             /* end header*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start about*/
+.about{
+    position: relative;
+    color: #fff;
+    background: url(../images/mainPage/slide3.jpg)no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.about .over{
+    background: rgba(0, 0, 0, .2);
+}
+
+
+.about .image{
+    padding: 30px 0;
+}
+
+
+.about .image .img-thumbnail{
+    padding: 10px;
+    background-color: #ddd;
+    border: 10px solid rgb(64, 62, 62);
+}
+
+
+.about .col-sm-6 .over{
+    background: rgba(0, 0, 0, .6);
+}
+
+
+
+
+.about .about-me{
+    position: relative;
+    padding: 10px 35px 30px;
+    
+}
+
+.about .about-me .tri{
+    
+}
+
+
+.about .about-me h2{
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+.about .about-me p{
+    line-height: 35px;
+}
+
+.about .about-me button{
+    margin-top: 25px;
+    padding: 10px 15px;
+    color: #fff;
+    background:  $mc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+}
+
+.about .about-me button:hover{
+    color: #333;
+    background: #fff;
+}
+
+.about .about-me button:nth-of-type(2){
+    margin-left: 10px;
+}
+
+
+.about .after:after{
+    margin: 10px auto 20px;
+}
+
+
+@media(max-width:991px){
+    .about .about-me p{
+        line-height: 25px;
+    }
+    
+    .about .about-me button{
+      padding: 10px 9px;   
+    }
+    
+    .about .about-me button:nth-of-type(2){
+    margin-left: 5px;
+    }
+}
+
+                             /* end about*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start resume*/
+.resume{
+    padding: 50px 0;
+    position: relative;
+    background: url(../images/mainPage/slide3.jpg)no-repeat center center fixed;
+}
+
+
+.resume .title{
+    border: 2px solid  $mc;
+    padding: 20px;
+    margin: 0 auto 100px;
+    width: 380px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    color: #fff;
+}
+
+.resume .col-md-8{
+    padding-left: 0;
+}
+
+.resume .section{
+    border-left: 2px solid  $mc;
+    padding-left: 10px;
+}
+
+
+.resume i{
+    width: 20px;
+    height: 20px;
+    background: #ed5565;
+    position: absolute;
+    left: -9px;
+    font-size: 25px;
+    outline: 10px solid #636262;
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+    margin-top: 17px;
+}
+
+
+.resume .edu .head:hover i{
+    background: #2098D1;
+    transform: rotate(135deg);
+    outline: 10px solid #ed5565;
+}
+
+.resume .edu .head h4{
+    background: #ed5565;
+    padding: 10px;
+    color: #fff;
+
+}
+
+
+.resume .edu{
+    margin-left: 40px;
+    margin-bottom: 80px;
+}
+
+.resume .edu .pa,
+.resume .skills .pa{
+    color: #eee;
+}
+
+
+.resume .edu h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.resume .edu h3{
+    color: #fff;
+}
+
+
+.resume  .subtitle{
+    color: #fff;
+    background:  $mc;
+    padding: 18px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+
+.resume .title:hover{
+    border: 2px solid #ed5565;
+}
+
+
+
+.resume .skills .progress{
+    width: 100%;
+    height: 50px;
+    background: #bdc3c7;;
+    margin-bottom: 40px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.resume .skills .progress .photoshop{
+    height: 100%;
+    padding-left: 20px;
+}
+
+@media(max-width:767px){
+    .resume .title{
+        padding: 10px 0;
+        width: 300px;
+    }
+    
+    .resume .subtitle {
+    margin-bottom: 30px;
+
+    }
+    .resume .section{
+            padding-left: 5px;
+    }
+    
+    .resume .section {
+    border-left:none;
+    }
+    
+    .resume .edu .head h4{
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .resume .subtitle{
+        margin-left: 30px;
+    }
+    
+    .resume i {
+        width: 15px;
+        height: 15px;
+        left: 8px;
+        outline: 10px solid #636262;
+        margin-top: 24px;
+    }
+    
+    .resume .skills .progress{
+        margin-bottom: 25px;
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    .resume .skills h2{
+        margin-left: auto;
+         margin-right: auto;
+    }
+    
+    
+}
+
+
+                             /* end resume*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start portofolio*/
+
+.portofolio{
+    padding: 50px 0 0;
+    color: #fff;
+    position: relative;
+}
+
+.portofolio .container{
+    position: relative;
+}
+
+.portofolio  .over{
+    background: rgba(0, 0, 0, .2);
+}
+
+.portofolio .porto .img-responsive{
+    width: 100%;
+}
+
+
+.portofolio .up h2{
+    border: 2px solid #fff;
+    margin: 30px auto 60px;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 25px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+
+
+.portofolio  .up h2:hover{
+    border: 2px solid #bdc3c7;;
+   color:  $mc;
+}
+
+
+.portofolio li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    background:  $mc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+
+.portofolio li:hover{
+    background: #fff;
+    color: #333;
+}
+
+.portofolio .porto{
+    margin-bottom: 30px;
+}
+
+.portofolio button{
+    padding: 10px 20px;
+    background:  $mc;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.portofolio  button:hover{
+    box-shadow: 3px 3px 11px 0px #060606;
+    background: #0b8c90;
+}
+
+.portofolio .up p{
+    display: none;
+}
+
+
+
+@media(max-width:767px){
+    
+    .portofolio .up h2{
+        font-size: 25px;
+    }
+    
+
+    
+    .portofolio .hire-me i {
+        font-size: 60px;
+    }
+    
+    .portofolio .hire-me h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .portofolio .hire-me .pa {
+        font-size: 15px;
+    }
+    
+    .portofolio .hire-me button{
+        padding: 12px 15px;
+        border-radius: 3px;
+    }
+    
+}
+
+
+@media(max-width:479px){
+    
+    .portofolio li{
+        margin-left: 2px;
+        margin-bottom: 25px;
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    
+}
+
+                             /* end portofolio*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start testimonial*/
+.testimonial {
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.testimonial .bx-wrapper{
+    box-shadow: none!important;
+    border: none!important;
+    background: none!important;
+    margin-bottom: 0;
+    padding: 80px 100px;
+}
+
+.testimonial .bx-wrapper .bx-controls-direction a{
+    top: 245px;
+}
+
+.testimonial .bx-wrapper .bx-prev {
+    left: 45%;
+}
+
+
+.testimonial .bx-wrapper .bx-next {
+    right: 45%;
+}
+
+@media(max-width:767px){
+    
+    .testimonial .bx-wrapper{
+        padding: 60px 0px;
+    }
+    
+    .testimonial .bx-viewport{
+        margin-bottom: 50px;
+    }
+    
+    .testimonial .bx-wrapper .bx-prev {
+    left: 40%;
+    }
+    
+    .testimonial .bx-wrapper .bx-next {
+    right: 40%;
+    }
+}
+                             /* end testimonial*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start contact*/
+body{
+     background: url(../images/mainPage/slide3.jpg)no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact{
+    padding: 50px 0;
+    position: relative;
+}
+
+.contact .container{
+    position: relative;
+}
+
+.contact .over{
+   background:  rgba(40, 41, 41, 0.4);
+    }
+
+.contact i{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 38px;
+
+}
+
+.contact h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.contact .form-control{
+    position: relative;
+    margin-bottom: 30px;
+    height: 60px;
+    padding-left: 15px;
+    background: #212121;
+    border: 2px solid rgb(72, 72, 72);
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: inset 0 0px 0px 0px rgb(179, 179, 179), 0 0 0px 2px rgb(17, 171, 176);
+}
+
+
+
+.contact .form-group button{
+    padding: 20px;
+    width: 90%;
+    border: none;
+    color: #fff;
+    background:  $mc;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: all .5s ease-in-out;
+}
+
+.contact .form-group button:hover{
+    color: #fff;
+    background: #212121;
+}
+
+.contact textarea{
+    position: relative;
+    height: 162px;
+    width: 90%;
+    padding-left: 15px;
+    padding-top: 15px;
+    background: #212121;
+    border: 2px solid rgb(72, 72, 72);
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: inset 0 0px 0px 0px rgb(179, 179, 179), 0 0 0px 2px rgb(17, 171, 176);
+}
+
+
+.contact .form-control:focus{
+    box-shadow: inset 0 0px 10px 1px rgba(197, 197, 197, .6), 0 0 5px 3px rgb(17, 171, 176);
+}
+
+.contact textarea:focus{
+    box-shadow: inset 0 0px 10px 1px rgba(197, 197, 197, .6), 0 0 5px 3px rgb(17, 171, 176);
+}
+
+@media(max-width:767px){
+    .contact form .col-sm-6:nth-of-type(1){
+        width: 90%;
+    }
+}
+
+                             /* end contact*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+                             /* start footer*/
+
+
+.footer .social{
+   
+    padding: 30px 0;
+    position: relative;
+}
+
+.footer .foot{
+    padding: 30px 0 50px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+.footer .over{
+   background:  rgba(40, 41, 41, 0.9);
+    }
+
+
+.footer .foot div:nth-of-type(2){
+    position: relative;
+}
+
+.footer .foot span{
+    color:  $mc;
+}
+
+.footer .icons{
+    position: relative;
+}
+
+.footer .icons .fa{
+    color: #fff;
+    font-size: 35px;
+    margin-left: 30px;
+    transition: all .2s ease-in-out;
+}
+
+.footer .icons .fa-facebook:hover{
+        color: #3b5998;
+}
+
+.footer .icons .fa-twitter:hover{
+        color: #1da1f2;
+}
+
+.footer .icons .fa-google-plus:hover{
+        color: #dd4b39;
+}
+
+.footer .icons .fa-linkedin:hover{
+        color: #0077b5;
+}
+
+.footer .icons .fa-github:hover{
+        color: #4078c0;
+}
+
+.footer .icons .fa-dribbble:hover{
+        color: #444444;
+}
+
+.footer .icons .fa-skype:hover{
+        color: #00aff0;
+}
+
+
+@media(max-width:767px){
+
+    
+    .footer .icons a {
+        font-size: 35px ;
+        margin-left: 0px;
+    }
+    
+    
+    .footer .social {
+        padding: 30px 0 0;
+    }
+}
+
+
+@media(max-width:479px){
+    .footer .icons a {
+        margin-left: -20px;
+        font-size: 0px;
+    }
+    
+    .footer .social {
+        padding: 30px 0 0;
+    }
+}
+
+                             /* end footer*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+
+#scrollTop{
+    width: 40px;
+    height: 40px;
+    background:  $mc;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999999;
+    right: 10px;
+    bottom: 15px;
+    cursor: pointer;
+    display: none;
+    i{
+        margin: 10px;
+        font-size: 20px
+    }
+}
