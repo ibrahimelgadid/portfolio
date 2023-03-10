@@ -30,24 +30,23 @@ nav .image img {
   max-width: 100%;
 }
 
-nav ul li {
+nav li {
+  margin: 20px 0;
+}
+nav ul a {
   padding: 10px 30px;
-  margin: 15px 0;
   cursor: pointer;
   transition: background-color 0.3s;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-}
-
-nav ul li:hover {
-  background-color: #11abb0;
-}
-
-nav ul li a {
   color: White;
   font-size: 1.5rem;
-  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-nav ul .navIcon {
-  color: White;
+
+nav ul a:hover,
+nav ul a.active {
+  background-color: #11abb0;
 }

@@ -9,7 +9,7 @@ import {
   faCircleUser,
   faContactBook,
 } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import classNames from "classnames";
 
 const Navbar = ({ openSidebar }) => {
@@ -20,25 +20,46 @@ const Navbar = ({ openSidebar }) => {
       </div>
       <ul>
         <li>
-          <FontAwesomeIcon icon={faEnvelope} className="navIcon" size="xl" />
-          <Link to="home">Home</Link>
+          <NavLink to="home">
+            <FontAwesomeIcon icon={faEnvelope} className="navIcon" size="lg" />
+            Home
+          </NavLink>
         </li>
         <li>
-          <FontAwesomeIcon icon={faCircleUser} className="navIcon" size="xl" />
-
-          <Link to="about">About</Link>
+          <NavLink to="about">
+            {" "}
+            <FontAwesomeIcon
+              icon={faCircleUser}
+              className="navIcon"
+              size="lg"
+            />
+            About
+          </NavLink>
         </li>
         <li>
-          <FontAwesomeIcon icon={faFile} className="navIcon" size="xl" />
-          <Link to="projects">Projects</Link>
+          <NavLink to="projects">
+            {" "}
+            <FontAwesomeIcon icon={faFile} className="navIcon" size="lg" />
+            Projects
+          </NavLink>
         </li>
         <li>
-          <FontAwesomeIcon icon={faBicycle} className="navIcon" size="xl" />
-          <Link to="skills">Skills</Link>
+          <NavLink to="skills">
+            {" "}
+            <FontAwesomeIcon icon={faBicycle} className="navIcon" size="lg" />
+            Skills
+          </NavLink>
         </li>
         <li>
-          <FontAwesomeIcon icon={faContactBook} className="navIcon" size="xl" />
-          <Link to="contact">Contact</Link>
+          <NavLink to="contact">
+            {" "}
+            <FontAwesomeIcon
+              icon={faContactBook}
+              className="navIcon"
+              size="lg"
+            />
+            Contact
+          </NavLink>
         </li>
       </ul>
     </nav>
