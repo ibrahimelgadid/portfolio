@@ -1,0 +1,47 @@
+nav {
+  position: absolute;
+  background-color: #333;
+  height: 100vh;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+nav .image {
+  border: 7px solid #1e1e1e;
+  padding: 7px;
+  background-color: #a2a2a2;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  margin: 20px auto;
+}
+
+nav .image img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+nav ul li {
+  padding: 10px 30px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav ul li:hover {
+  background-color: #11abb0;
+}
+
+nav ul li a {
+  color: White;
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+nav ul .navIcon {
+  color: White;
+}

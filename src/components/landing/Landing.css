@@ -1,0 +1,88 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../../public/landscape1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.landing .overlay {
+  position: absolute;
+  background-color: #000000a7;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.landing .text {
+  padding: 20px 0;
+  color: white;
+  z-index: 2;
+}
+
+.landing .text p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.landing .typing {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.landing .details {
+  z-index: 3;
+}
+.landing button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 3px solid#11abb0;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.landing button:nth-child(1) {
+  background-color: #11abb0;
+}
+
+.landing button:nth-child(1):hover {
+  border: 4px solid #11abb0;
+  background-color: transparent;
+}
+
+.landing button:nth-child(2):hover {
+  border: 4px solid #11abb0;
+  background-color: transparent;
+}
+
+.landing .social {
+  z-index: 3;
+  font-size: large;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.564);
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.landing ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.landing li {
+  padding: 15px 30px;
+}
+
+.landing li a {
+  color: white;
+}

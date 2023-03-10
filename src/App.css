@@ -1,0 +1,28 @@
+:root {
+  --bgColor: #2f4454;
+  --Lemon: #1fbb00e1;
+  --DarkLemon: #1fbb00;
+  --SecondColor: #9900bbd7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio {
+  position: relative;
+}
