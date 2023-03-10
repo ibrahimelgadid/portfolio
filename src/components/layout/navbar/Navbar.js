@@ -10,10 +10,11 @@ import {
   faContactBook,
 } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
-const Navbar = () => {
+const Navbar = ({ openSidebar }) => {
   return (
-    <nav>
+    <nav className={classNames({ "nav-top": openSidebar })}>
       <div className="image">
         <img src="./hima.jpg" alt="" />
       </div>

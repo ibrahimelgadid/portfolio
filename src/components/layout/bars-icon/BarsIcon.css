@@ -1,0 +1,31 @@
+.bars-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.bars-icon div {
+  width: 50px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.bars-icon-op {
+  left: 230px;
+}
+
+.bars-icon-d-one {
+  transform: rotate(45deg);
+}
+.bars-icon-d-two {
+  opacity: 0;
+}
+.bars-icon-d-three {
+  transform: rotate(-45deg) translate(16px, -16px);
+}
