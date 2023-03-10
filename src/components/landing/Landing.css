@@ -74,15 +74,15 @@
   border-radius: 50px;
 }
 
-.landing ul {
+.landing .social ul {
   display: flex;
-  justify-content: space-around;
+  padding: 0 20px;
 }
 
-.landing li {
-  padding: 15px 30px;
+.landing .social li {
+  padding: 15px 20px;
 }
 
-.landing li a {
+.landing .social a {
   color: white;
 }
