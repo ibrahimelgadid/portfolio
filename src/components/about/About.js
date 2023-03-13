@@ -3,7 +3,10 @@ import "./About.css";
 const About = () => {
   return (
     <div className="about">
-      <h1>About</h1>
+      <div className="head">
+        <p>Get more about me</p>
+        <h1>About Me</h1>
+      </div>
     </div>
   );
 };

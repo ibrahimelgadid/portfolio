@@ -7,7 +7,7 @@ import {
   faFacebookMessenger,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export const Landing = () => {
@@ -41,28 +41,35 @@ export const Landing = () => {
       </div>
       <div className="details">
         <button>Let's Talk</button>
-        <button>Download CV</button>
+        <button>
+          <a href="/resume.pdf" download>
+            Download CV
+          </a>
+        </button>
       </div>
 
       <div className="social">
         <ul>
           <li>
-            <Link to="">
-              <FontAwesomeIcon size="xl" icon={faFacebook} />
+            <Link target={"_blank"} to="mailto:ibrahimelgadid30@gmail.com">
+              <FontAwesomeIcon size="xl" icon={faEnvelope} />
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link to="https://api.whatsapp.com/send/?phone=00201024876339&text=helloimhere&type=phone_number&app_absent=0">
               <FontAwesomeIcon size="xl" icon={faWhatsapp} />
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link to="http://m.me/ibrahimelgadid" target={"_blank"}>
               <FontAwesomeIcon size="xl" icon={faFacebookMessenger} />
             </Link>
           </li>
           <li>
-            <Link to="">
+            <Link
+              to="https://www.linkedin.com/in/ibrahim-elgeded-233269132/"
+              target={"_blank"}
+            >
               <FontAwesomeIcon size="xl" icon={faLinkedin} />
             </Link>
           </li>

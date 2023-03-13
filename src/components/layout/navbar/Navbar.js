@@ -20,7 +20,7 @@ const Navbar = ({ openSidebar }) => {
       </div>
       <ul>
         <li>
-          <NavLink to="home">
+          <NavLink to="/">
             <FontAwesomeIcon icon={faEnvelope} className="navIcon" size="lg" />
             Home
           </NavLink>

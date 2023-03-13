@@ -1,7 +1,10 @@
 .about {
-  background-color: rgba(40, 237, 240, 0.53);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #11abb0;
   height: 100vh;
+  padding: 50px 0;
+}
+
+.about .head {
+  text-align: center;
+  color: white;
 }
