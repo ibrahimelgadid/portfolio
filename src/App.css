@@ -1,8 +1,13 @@
 :root {
-  --bgColor: #2f4454;
-  --Lemon: #1fbb00e1;
-  --DarkLemon: #1fbb00;
-  --SecondColor: #9900bbd7;
+  --bgColorGrad: linear-gradient(
+    to right top,
+    #0085e4,
+    #00a2e5,
+    #00b9cc,
+    #00c9a7
+  );
+  --SecondColor: #673ab7;
+  --PrimaryColor: #2196f3;
 }
 
 * {
@@ -15,6 +20,23 @@ body {
   background-color: #eee;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+  transition: all 0.3s;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color: var(--PrimaryColor);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--PrimaryColor);
+}
+
 ul {
   list-style: none;
 }
@@ -23,6 +45,18 @@ a {
   text-decoration: none;
 }
 
-.portfolio {
+.overlay {
+  position: fixed;
+  background-color: #0000009d;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.container {
   position: relative;
+  max-width: 88%;
+  z-index: 5;
+  margin: auto;
 }

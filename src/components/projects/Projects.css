@@ -1,0 +1,132 @@
+.projects {
+  background-image: url("../../../public/imgs/abstrac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 50px 0;
+  margin: auto;
+}
+
+.projects h1 {
+  text-align: center;
+  color: white;
+  padding: 20px 0 70px;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 40px;
+  justify-items: center;
+}
+
+.projects .cards .card {
+  border-radius: 20px;
+  background-color: var(--SecondColor);
+  position: relative;
+  padding: 10px 0;
+  width: 300px;
+  box-shadow: 6px 5px 15px 2px rgb(0 0 0 / 28%);
+}
+.projects .image {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 0 0;
+}
+
+.projects img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.projects .card h2 {
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.projects .card .btns {
+  padding: 20px;
+}
+.projects .card a:first-of-type {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: var(--PrimaryColor);
+  border: 3px solid var(--PrimaryColor);
+
+  margin-right: 5px;
+}
+
+.projects .card a:last-of-type {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 3px solid var(--PrimaryColor);
+}
+
+.projects .card .ribbon {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  left: -10px;
+}
+
+.projects .card .rib {
+  color: white;
+  height: 30px;
+  width: 200px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(315deg) translate(-57px, -34px);
+  position: relative;
+}
+
+.projects .card .rib::after {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ccc transparent transparent transparent;
+  top: 30px;
+  left: 33px;
+}
+
+.projects .card .rib::before {
+  content: "";
+  position: absolute;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #c0bebe transparent transparent transparent;
+  top: 30px;
+  right: 39px;
+}
+
+@media (max-width: 567px) {
+  .projects h1 {
+    padding: 20px 0 50px;
+  }
+
+  .projects .cards {
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .projects .cards .card {
+    padding: 5px 0;
+    width: 250px;
+  }
+  .projects .image {
+    padding: 20px 0 0 0;
+  }
+
+  .projects .card .btns {
+    padding: 15px;
+  }
+}

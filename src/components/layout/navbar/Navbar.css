@@ -3,10 +3,10 @@ nav {
   top: 100vh;
   background-color: #333;
   height: 100vh;
-  min-width: 200px;
+  min-width: 20px;
   display: flex;
   flex-direction: column;
-  z-index: 2;
+  z-index: 100;
   transition: top 0.5s;
 }
 
@@ -15,9 +15,8 @@ nav {
 }
 
 nav .image {
-  border: 7px solid #1e1e1e;
   padding: 7px;
-  background-color: #a2a2a2;
+  background-color: var(--SecondColor);
   border-radius: 50%;
   height: 150px;
   width: 150px;
@@ -37,9 +36,9 @@ nav ul a {
   padding: 10px 30px;
   cursor: pointer;
   transition: background-color 0.3s;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  color: White;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #eee;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -49,5 +48,23 @@ nav ul a {
 
 nav ul a:hover,
 nav ul a.active {
-  background-color: #11abb0;
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 568px) {
+  nav .image {
+    padding: 5px;
+    height: 120px;
+    width: 120px;
+    margin: 10px auto;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+  nav ul a {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    gap: 5px;
+  }
 }

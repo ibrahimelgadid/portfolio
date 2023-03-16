@@ -1,10 +1,8 @@
 import "./Navbar.css";
+import "animate.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faFile,
-  faBicycle,
-} from "@fortawesome/free-solid-svg-icons";
+import { faFile, faBicycle, faUser } from "@fortawesome/free-solid-svg-icons";
 import {
   faCircleUser,
   faContactBook,
@@ -15,13 +13,13 @@ import classNames from "classnames";
 const Navbar = ({ openSidebar }) => {
   return (
     <nav className={classNames({ "nav-top": openSidebar })}>
-      <div className="image">
-        <img src="./hima.jpg" alt="" />
+      <div className="image ">
+        <img src="./imgs/avatar-05.png" alt="" />
       </div>
       <ul>
         <li>
           <NavLink to="/">
-            <FontAwesomeIcon icon={faEnvelope} className="navIcon" size="lg" />
+            <FontAwesomeIcon icon={faUser} className="navIcon" size="lg" />
             Home
           </NavLink>
         </li>

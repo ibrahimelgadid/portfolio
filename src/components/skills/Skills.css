@@ -1,0 +1,121 @@
+.skills {
+  background-image: url("../../../public/imgs/abstrac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 70px 0;
+  margin: auto;
+}
+
+.skills p {
+  color: #ccc;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.skills h1 {
+  text-align: center;
+  color: white;
+  padding: 10px 0 70px;
+  position: relative;
+}
+
+.skills .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+}
+
+.skills .cards .card {
+  background-color: var(--SecondColor);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  min-width: 50%;
+}
+
+.skills .cards .card:hover {
+  box-shadow: 0px 0px 12px 2px #2c2c6ce0;
+}
+
+.skills .cards .card h2 {
+  color: var(--PrimaryColor);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills .cards .skill li {
+  height: 30px;
+  width: 100%;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.skills .cards .skill li .outer {
+  position: absolute;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+  margin-bottom: 10px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 19px;
+}
+
+.skills .cards .more-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+}
+
+.skills .cards .more-skills span {
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+}
+
+.skills .cards .more-skills svg {
+  color: var(--PrimaryColor);
+}
+@media (max-width: 567px) {
+  .skills p {
+    font-size: 15px;
+  }
+
+  .skills h1 {
+    padding: 10px 0 50px;
+  }
+
+  .skills .cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .skills .cards .card h2 {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+  }
+
+  .skills .cards .skill li {
+    height: 25px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .skills .cards .skill li .outer {
+    margin-bottom: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+  }
+
+  .skills .cards .more-skills {
+    row-gap: 20px;
+  }
+}

@@ -1,0 +1,41 @@
+footer {
+  position: relative;
+  background-color: var(--PrimaryColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  padding: 15px 10px;
+  color: #352157;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer .links {
+  display: flex;
+  padding: 15px 10px;
+  gap: 15px;
+}
+
+footer .links a {
+  background-color: #352157;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer .links svg {
+  color: white;
+}
+
+@media (max-width: 567px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    padding: 10px 7px;
+    font-size: 17px;
+  }
+}

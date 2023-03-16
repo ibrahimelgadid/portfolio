@@ -1,10 +1,68 @@
 .about {
-  background-color: #11abb0;
-  height: 100vh;
+  background-image: url("../../../public/imgs/abstrac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   padding: 50px 0;
+  align-items: center;
 }
 
 .about .head {
   text-align: center;
   color: white;
+  margin-bottom: 50px;
+}
+
+.about .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.about .image {
+  background-color: var(--SecondColor);
+  border-radius: 50%;
+}
+
+.about .image img {
+  max-width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.about .info {
+  max-width: 500px;
+}
+
+.about .info p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.about .info a {
+  color: white;
+  font-size: 19px;
+  background-color: var(--SecondColor);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+@media (max-width: 567px) {
+  .about .info p {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .about .info a {
+    font-size: 17px;
+    padding: 7px 10px;
+  }
 }
