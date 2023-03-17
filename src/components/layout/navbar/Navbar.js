@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
 import classNames from "classnames";
+import { faServicestack } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = ({ openSidebar }) => {
   return (
@@ -46,6 +47,17 @@ const Navbar = ({ openSidebar }) => {
             {" "}
             <FontAwesomeIcon icon={faBicycle} className="navIcon" size="lg" />
             Skills
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="services">
+            {" "}
+            <FontAwesomeIcon
+              icon={faServicestack}
+              className="navIcon"
+              size="lg"
+            />
+            Services
           </NavLink>
         </li>
         <li>

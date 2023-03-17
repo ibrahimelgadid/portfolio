@@ -1,0 +1,60 @@
+.services {
+  background-image: url("../../../public/imgs/abstrac.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 70px 0;
+}
+
+.services p {
+  color: #ccc;
+  text-align: center;
+}
+.services h1 {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.services .serv {
+  border: 2px solid var(--PrimaryColor);
+  width: fit-content;
+  margin: auto;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: var(--SecondColor);
+  max-width: 500px;
+}
+
+.services .serv h3 {
+  padding: 20px 10px;
+  color: #352157;
+  background-color: var(--PrimaryColor);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.services .serv ul {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.services .serv li {
+  padding: 10px 5px;
+  color: #eee;
+  font-weight: bold;
+  line-height: 1.5;
+  display: flex;
+  gap: 10px;
+}
+.services .serv svg {
+  color: var(--PrimaryColor);
+  font-weight: bold;
+}
