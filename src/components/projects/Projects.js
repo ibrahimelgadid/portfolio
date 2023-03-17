@@ -36,12 +36,22 @@ const Projects = () => {
               <div className="rib">Reactjs</div>
             </div>
             <div className="image">
-              <img src="./imgs/c-v.jpg" alt="" />
-            </div>
-            <h2>Project one</h2>
+              <img src="./imgs/Resume.jpg" alt="" />
+            </div>{" "}
+            <h2>My CV</h2>
             <div className="btns">
-              <Link to={""}>Live Show</Link>
-              <Link to={""}>Github</Link>
+              <Link
+                target={"_blank"}
+                to={"https://ibrahimelgadid-portfolio.vercel.app/"}
+              >
+                Live Show
+              </Link>
+              <Link
+                target={"_blank"}
+                to={"https://github.com/ibrahimelgadid/portfolio"}
+              >
+                Github
+              </Link>
             </div>
           </div>
           <div className="card">
