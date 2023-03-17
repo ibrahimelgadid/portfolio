@@ -27,7 +27,7 @@
   border-radius: 20px;
   background-color: var(--SecondColor);
   position: relative;
-  padding: 10px 0;
+  padding: 10px;
   width: 300px;
   box-shadow: 6px 5px 15px 2px rgb(0 0 0 / 28%);
 }
@@ -39,11 +39,11 @@
 
 .projects img {
   max-width: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .projects .card h2 {
-  color: white;
+  color: #e7e7e7;
   margin-left: 20px;
   margin-top: 20px;
 }
@@ -68,8 +68,8 @@
 }
 
 .projects .card .ribbon {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   position: absolute;
   overflow: hidden;
   top: -10px;
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(315deg) translate(-57px, -34px);
+  transform: rotate(315deg) translate(-57px, -10px);
   position: relative;
 }
 
@@ -95,7 +95,7 @@
   border-style: solid;
   border-color: #ccc transparent transparent transparent;
   top: 30px;
-  left: 33px;
+  left: 10px;
 }
 
 .projects .card .rib::before {
@@ -105,7 +105,7 @@
   border-style: solid;
   border-color: #c0bebe transparent transparent transparent;
   top: 30px;
-  right: 39px;
+  right: 14px;
 }
 
 @media (max-width: 567px) {
@@ -115,7 +115,7 @@
 
   .projects .cards {
     row-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
   .projects .cards .card {

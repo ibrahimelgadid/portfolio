@@ -34,7 +34,7 @@
   display: flex;
   gap: 5px;
 }
-.landing button {
+.landing .btns a {
   background-color: transparent;
   padding: 10px 20px;
   border: 3px solid var(--SecondColor);
@@ -45,23 +45,20 @@
   transition: all 0.3s;
 }
 
-.landing button:nth-child(1) {
+.landing .btns a:nth-child(1) {
   background-color: var(--SecondColor);
 }
 
-.landing button:nth-child(1):hover {
+.landing .btns a:nth-child(1):hover {
   outline: 2px solid var(--SecondColor);
   background-color: transparent;
 }
 
-.landing button:nth-child(2):hover {
+.landing .btns a:nth-child(2):hover {
   outline: 2px solid var(--SecondColor);
   background-color: transparent;
 }
 
-.landing button a {
-  color: white;
-}
 .landing .social {
   font-size: large;
   position: absolute;
@@ -104,7 +101,7 @@
     color: gray;
   }
 
-  .landing .btns button {
+  .landing .btns .btns a {
     padding: 5px 10px;
     font-size: 16px;
   }

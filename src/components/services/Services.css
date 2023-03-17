@@ -27,7 +27,8 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   background-color: var(--SecondColor);
-  max-width: 500px;
+  max-width: 400px;
+  box-shadow: 1px 0px 12px 0px #2e1854;
 }
 
 .services .serv h3 {

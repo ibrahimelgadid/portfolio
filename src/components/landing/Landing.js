@@ -40,12 +40,10 @@ export const Landing = () => {
           />
         </div>
         <div className="btns">
-          <button>Let's Talk</button>
-          <button>
-            <a href="/resume.pdf" download>
-              Download CV
-            </a>
-          </button>
+          <Link to={"/contact"}>Let's Talk</Link>
+          <a href="/resume.pdf" download>
+            Download CV
+          </a>
         </div>
 
         <div className="social">

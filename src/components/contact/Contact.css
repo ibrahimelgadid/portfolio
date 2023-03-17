@@ -6,7 +6,6 @@
   background-size: cover;
   min-height: 100vh;
   padding: 70px 0;
-  display: flex;
 }
 
 .contact p {
@@ -23,6 +22,7 @@
 
 .contact .info {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 .contact .cards .card {
@@ -65,7 +65,6 @@
   width: 100%;
   height: 40px;
   outline: none;
-  width: 400px;
   caret-color: white;
   font-size: 16px;
   color: white;
@@ -107,7 +106,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 567px) {
+@media (max-width: 768px) {
   .contact h1 {
     font-size: 40px;
   }

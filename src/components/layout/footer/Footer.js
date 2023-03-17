@@ -18,27 +18,30 @@ const Footer = () => {
       </p>
       <ul className="links">
         <li>
-          <Link to={""}>
+          <Link to={"https://github.com/ibrahimelgadid/"} target={"_blank"}>
             <FontAwesomeIcon size="lg" icon={faGithub} />
           </Link>
         </li>
         <li>
-          <Link to={""}>
+          <Link
+            to={"https://www.facebook.com/ibrahimelgadid/"}
+            target={"_blank"}
+          >
             <FontAwesomeIcon size="lg" icon={faFacebook} />
           </Link>
         </li>
         <li>
-          <Link to={""}>
+          <Link to={"http://m.me/ibrahimelgadid"} target={"_blank"}>
             <FontAwesomeIcon size="lg" icon={faFacebookMessenger} />
           </Link>
         </li>
         <li>
-          <Link to={""}>
+          <Link to={"mailto:ibrahimelgadid30@gmail.com"} target={"_blank"}>
             <FontAwesomeIcon size="lg" icon={faEnvelope} />
           </Link>
         </li>
         <li>
-          <Link to={""}>
+          <Link to={"https://wa.me/+201024876339"} target={"_blank"}>
             <FontAwesomeIcon size="lg" icon={faWhatsapp} />
           </Link>
         </li>
