@@ -36,7 +36,7 @@ const Projects = () => {
               <div className="rib">Reactjs</div>
             </div>
             <div className="image">
-              <img src="./imgs/avatar-02.png" alt="" />
+              <img src="./imgs/c-v.jpg" alt="" />
             </div>
             <h2>Project one</h2>
             <div className="btns">
