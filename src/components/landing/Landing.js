@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Landing = () => {
   return (
@@ -15,7 +16,18 @@ export const Landing = () => {
       <div className="overlay"></div>
       <div className="container">
         <div className="text">
-          <p>Welcome, </p>
+          <motion.p
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 2,
+              type: "spring",
+              stiffness: 120,
+            }}
+            viewport={{ once: true }}
+          >
+            Welcome,{" "}
+          </motion.p>
           <Typewriter
             options={{
               loop: true,
@@ -39,14 +51,36 @@ export const Landing = () => {
             }}
           />
         </div>
-        <div className="btns">
+        <motion.div
+          className="btns"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+            delay: 0.4,
+            stiffness: 120,
+          }}
+          viewport={{ once: true }}
+        >
           <Link to={"/contact"}>Let's Talk</Link>
           <a href="/resume.pdf" download>
             Download CV
           </a>
-        </div>
+        </motion.div>
 
-        <div className="social">
+        <motion.div
+          className="social"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            duration: 2,
+            type: "spring",
+            delay: 0.8,
+            stiffness: 120,
+          }}
+          viewport={{ once: true }}
+        >
           <ul>
             <li>
               <Link target={"_blank"} to="mailto:ibrahimelgadid30@gmail.com">
@@ -72,7 +106,7 @@ export const Landing = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

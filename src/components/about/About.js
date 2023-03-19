@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./About.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -12,9 +13,19 @@ const About = () => {
         </div>
 
         <div className="content">
-          <div className="image">
+          <motion.div
+            animate={{ scale: 1.1 }}
+            transition={{
+              duration: 2,
+              type: "spring",
+              stiffness: 120,
+              repeat: Infinity,
+            }}
+            viewport={{ once: true }}
+            className="image"
+          >
             <img src="./imgs/avatar-05.png" alt="" />
-          </div>
+          </motion.div>
           <div className="info">
             <p>
               {" "}

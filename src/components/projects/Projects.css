@@ -31,6 +31,19 @@
   width: 300px;
   box-shadow: 6px 5px 15px 2px rgb(0 0 0 / 28%);
 }
+
+.projects .cards .card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: var(--PrimaryColor);
+  transition: all 0.3s;
+}
+
 .projects .image {
   display: flex;
   justify-content: center;
@@ -40,6 +53,12 @@
 .projects img {
   max-width: 100%;
   border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.projects .cards .card:hover img {
+  transform: rotate(2deg) scale(1.01);
+  filter: grayscale(0.9);
 }
 
 .projects .card h2 {
@@ -74,6 +93,7 @@
   overflow: hidden;
   top: -10px;
   left: -10px;
+  z-index: 5;
 }
 
 .projects .card .rib {

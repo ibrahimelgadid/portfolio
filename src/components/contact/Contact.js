@@ -4,7 +4,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
@@ -59,31 +58,40 @@ const Contact = () => {
               <FontAwesomeIcon size="xl" icon={faFacebookMessenger} />
               <h3>Messenger</h3>
               <span>
-                <Link target={"_blank"} href={"https://m.me/ibrahimelgadid"}>
+                <a
+                  rel={"noreferrer"}
+                  target={"_blank"}
+                  href={"https://m.me/ibrahimelgadid"}
+                >
                   ibrahimelgadid
-                </Link>
+                </a>
               </span>
             </div>
             <div className="card">
               <FontAwesomeIcon size="xl" icon={faEnvelope} />
               <h3>Gmail</h3>
               <span>
-                <Link
-                  target={"_blank"}
+                <a
+                  rel={"noreferrer"}
                   href="mailto:ibrahimelgadid30@gmail.com"
+                  target={"_blank"}
                 >
                   {" "}
                   ibrahimelgadid30@gmail.com
-                </Link>
+                </a>
               </span>
             </div>
             <div className="card">
               <FontAwesomeIcon size="xl" icon={faWhatsapp} />
               <h3>WhatsApp</h3>
               <span>
-                <Link target={"_blank"} href="https://wa.me/+201024876339">
+                <a
+                  rel={"noreferrer"}
+                  target={"_blank"}
+                  href="https://wa.me/+201024876339"
+                >
                   +201024876339
-                </Link>
+                </a>
               </span>
             </div>
           </div>

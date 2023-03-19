@@ -8,6 +8,8 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import { motion } from "framer-motion";
+
 const Footer = () => {
   return (
     <footer>

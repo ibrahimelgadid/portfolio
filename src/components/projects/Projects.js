@@ -56,28 +56,65 @@ const Projects = () => {
           </div>
           <div className="card">
             <div className="ribbon">
-              <div className="rib">Reactjs</div>
+              <div className="rib">GitHub</div>
             </div>
             <div className="image">
-              <img src="./imgs/avatar-03.png" alt="" />
+              <img src="./imgs/Github.png" alt="" />
             </div>{" "}
-            <h2>Project one</h2>
+            <h2>My Github</h2>
             <div className="btns">
-              <Link to={""}>Live Show</Link>
-              <Link to={""}>Github</Link>
+              <Link target={"_blank"} to={"https://github.com/ibrahimelgadid"}>
+                Live Show
+              </Link>
+              <Link target={"_blank"} to={"https://github.com/ibrahimelgadid"}>
+                Github
+              </Link>
             </div>
           </div>
           <div className="card">
             <div className="ribbon">
-              <div className="rib">Reactjs</div>
+              <div className="rib">Html & Css</div>
             </div>
             <div className="image">
-              <img src="./imgs/avatar-04.png" alt="" />
+              <img src="./imgs/temp1.png" alt="" />
             </div>{" "}
-            <h2>Project one</h2>
+            <h2>Html css template one</h2>
             <div className="btns">
-              <Link to={""}>Live Show</Link>
-              <Link to={""}>Github</Link>
+              <Link
+                target={"_blank"}
+                to={"https://ibrahimelgadid.github.io/html_css_template_3/"}
+              >
+                Live Show
+              </Link>
+              <Link
+                target={"_blank"}
+                to={"https://github.com/ibrahimelgadid/html_css_template_3"}
+              >
+                Github
+              </Link>
+            </div>
+          </div>
+          <div className="card">
+            <div className="ribbon">
+              <div className="rib">Html & Css</div>
+            </div>
+            <div className="image">
+              <img src="./imgs/temp1.png" alt="" />
+            </div>{" "}
+            <h2>Html css template two</h2>
+            <div className="btns">
+              <Link
+                target={"_blank"}
+                to={"https://ibrahimelgadid.github.io/html-css_temp/"}
+              >
+                Live Show
+              </Link>
+              <Link
+                target={"_blank"}
+                to={"https://github.com/ibrahimelgadid/html-css_temp"}
+              >
+                Github
+              </Link>
             </div>
           </div>
         </div>

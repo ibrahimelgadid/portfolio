@@ -1,6 +1,8 @@
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Skills.css";
+import { motion } from "framer-motion";
+
 const Skills = () => {
   return (
     <div className="skills">
@@ -13,19 +15,52 @@ const Skills = () => {
             <h2>Frontend Technologies</h2>
             <ul className="skill">
               <li>
-                <div style={{ width: "85%" }} className="outer">
+                <motion.div
+                  className="outer"
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "85%" }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    delay: 0,
+                    stiffness: 80,
+                  }}
+                  viewport={{ once: true }}
+                >
                   Reactjs
-                </div>
+                </motion.div>
               </li>
               <li>
-                <div style={{ width: "90%" }} className="outer">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "90%" }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    delay: 0.2,
+                    stiffness: 80,
+                  }}
+                  viewport={{ once: true }}
+                  className="outer"
+                >
                   Tailwind
-                </div>
+                </motion.div>
               </li>
               <li>
-                <div style={{ width: "85%" }} className="outer">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "85%" }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    delay: 0.4,
+                    stiffness: 80,
+                  }}
+                  viewport={{ once: true }}
+                  className="outer"
+                >
                   Bootstarp
-                </div>
+                </motion.div>
               </li>
             </ul>
           </div>
@@ -33,14 +68,36 @@ const Skills = () => {
             <h2>Backend Technologies</h2>
             <ul className="skill">
               <li>
-                <div style={{ width: "90%" }} className="outer">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "90%" }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    delay: 0,
+                    stiffness: 80,
+                  }}
+                  viewport={{ once: true }}
+                  className="outer"
+                >
                   Nodejs
-                </div>
+                </motion.div>
               </li>
               <li>
-                <div style={{ width: "85%" }} className="outer">
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: "85%" }}
+                  transition={{
+                    duration: 2,
+                    type: "spring",
+                    delay: 0.2,
+                    stiffness: 80,
+                  }}
+                  viewport={{ once: true }}
+                  className="outer"
+                >
                   Mongodb
-                </div>
+                </motion.div>
               </li>
             </ul>
           </div>

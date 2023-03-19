@@ -80,6 +80,11 @@
 
 .landing .social a {
   color: white;
+  transition: all 0.3s;
+}
+
+.landing .social a:hover {
+  color: var(--PrimaryColor);
 }
 
 @media (max-width: 768px) {
