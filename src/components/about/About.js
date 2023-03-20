@@ -14,12 +14,13 @@ const About = () => {
 
         <div className="content">
           <motion.div
-            animate={{ scale: 1.1 }}
+            animate={{ scale: 1.01 }}
             transition={{
               duration: 2,
               type: "spring",
               stiffness: 120,
               repeat: Infinity,
+              repeatType: "reverse",
             }}
             viewport={{ once: true }}
             className="image"
