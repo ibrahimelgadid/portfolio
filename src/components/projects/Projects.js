@@ -117,6 +117,29 @@ const Projects = () => {
               </Link>
             </div>
           </div>
+          <div className="card">
+            <div className="ribbon">
+              <div className="rib">Reactjs</div>
+            </div>
+            <div className="image">
+              <img src="./imgs/weather.jpg" alt="" />
+            </div>{" "}
+            <h2>Weather forcast</h2>
+            <div className="btns">
+              <Link
+                target={"_blank"}
+                to={"https://react-weather-app-weld-one.vercel.app/"}
+              >
+                Live Show
+              </Link>
+              <Link
+                target={"_blank"}
+                to={"https://github.com/ibrahimelgadid/react-weather-app"}
+              >
+                Github
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
