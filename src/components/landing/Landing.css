@@ -24,6 +24,9 @@
   margin-bottom: 10px;
   text-align: center;
 }
+.landing .Typewriter {
+  min-width: 350px;
+}
 
 .landing .typing {
   font-size: 35px;
@@ -95,6 +98,10 @@
   .landing .text p {
     font-size: 20px;
     margin-bottom: 0;
+  }
+
+  .landing .Typewriter {
+    min-width: 250px;
   }
 
   .landing .text div span:first-of-type {
