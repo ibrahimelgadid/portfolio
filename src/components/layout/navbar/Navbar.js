@@ -15,7 +15,7 @@ const Navbar = ({ openSidebar }) => {
   return (
     <nav className={classNames({ "nav-top": openSidebar })}>
       <div className="image ">
-        <img src="./imgs/avatar-05.png" alt="" />
+        <img src="./imgs/team-01.png" alt="" />
       </div>
       <ul>
         <li>

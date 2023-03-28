@@ -25,7 +25,7 @@ const About = () => {
             viewport={{ once: true }}
             className="image"
           >
-            <img src="./imgs/avatar-05.png" alt="" />
+            <img src="./imgs/team-01.png" alt="" />
           </motion.div>
           <div className="info">
             <p>
